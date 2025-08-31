@@ -3,158 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Praxis für Neurologie, Psychiatrie & Psychotherapie – Dr. med. [Name]</title>
-  <meta name="description" content="Praxis für Neurologie, Psychiatrie & Psychotherapie – Sprechzeiten, Leistungen, Kontakt, Anfahrt." />
-  <meta property="og:title" content="Praxis für Neurologie, Psychiatrie & Psychotherapie – Dr. med. [Name]" />
-  <meta property="og:description" content="Sprechzeiten, Leistungen, Kontakt, Anfahrt." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
+  <title>Dr. med. Nannette Deutsch Schaab – Neurologie · Psychiatrie · Psychotherapie</title>
+  <meta name="description" content="Dr. med. Nannette Deutsch Schaab – Neurologie, Psychiatrie und Psychotherapie. Sprechzeiten nur nach Vereinbarung. Bahnstraße 8, 65207 Wiesbaden-Erbenheim." />
   <link rel="icon" href="favicon.ico" />
   <style>
-    :root{
-      --bg:#ffffff;--fg:#0b1320;--muted:#6b7280;--brand:#1e40af;--card:#f8fafc;--border:#e5e7eb;--ok:#065f46;--warn:#92400e
-    }
+    :root { --bg:#ffffff; --fg:#0b1320; --muted:#6b7280; --brand:#1e40af; --card:#f8fafc; --border:#e5e7eb; }
     *{box-sizing:border-box}
-    html,body{margin:0;height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--fg);background:var(--bg);}
-    a{color:var(--brand);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:960px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border);}
+    html,body{margin:0;height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--fg);background:var(--bg)}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:880px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
     .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
     .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#93c5fd,#60a5fa);display:grid;place-items:center;color:#0b1320;font-weight:700}
+    .logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#93c5fd,#60a5fa);display:grid;place-items:center;color:#0b1320;font-weight:700}
     .title{line-height:1.1;margin:0}
-    .subtitle{margin:0;color:var(--muted);font-size:.95rem}
-    .menu a{padding:12px;border-radius:10px}
+    .subtitle{margin:0;color:var(--muted)}
+    .menu a{padding:10px;border-radius:8px}
     .menu a:hover{background:var(--card)}
+    .section{scroll-margin-top:90px;padding:28px 0}
     .hero{background:linear-gradient(180deg,#f0f9ff,transparent);border-bottom:1px solid var(--border)}
-    .hero h1{font-size:clamp(1.6rem,2.5vw,2.2rem);margin:12px 0 6px}
-    .hero p{color:var(--muted);margin:6px 0 18px}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
-    .grid{display:grid;gap:18px}
-    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
-    .list{margin:0;padding-left:18px}
-    .kpi{display:flex;gap:18px;flex-wrap:wrap}
-    .kpi .pill{background:#ecfeff;border:1px solid #cffafe;color:#155e75;border-radius:999px;padding:8px 12px;font-size:.9rem}
-    .section{scroll-margin-top:90px;padding:36px 0}
-    .footer{border-top:1px solid var(--border);color:var(--muted);font-size:.95rem}
+    .hero h1{font-size:clamp(1.4rem,2.4vw,2rem);margin:10px 0 6px}
+    .hero p{color:var(--muted);margin:6px 0 14px}
+    .pillrow{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{background:#ecfeff;border:1px solid #cffafe;color:#155e75;border-radius:999px;padding:8px 12px;font-size:.92rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:white}
-    .btn:hover{background:#f9fafb}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px}
-    summary{cursor:pointer;font-weight:600}
+    .btn[disabled]{opacity:.6;cursor:not-allowed}
+    .footer{border-top:1px solid var(--border);color:var(--muted);font-size:.95rem}
   </style>
 </head>
 <body>
   <header aria-label="Seitenkopf und Navigation">
     <div class="container nav">
       <div class="brand" role="banner">
-        <div class="logo" aria-hidden="true">N</div>
+        <div class="logo" aria-hidden="true">ND</div>
         <div>
-          <h1 class="title">Praxis für Neurologie, Psychiatrie & Psychotherapie</h1>
-          <p class="subtitle">Dr. med. [Name] – Fachärztin für Neurologie und Psychiatrie</p>
+          <h1 class="title">Dr. med. Nannette Deutsch Schaab</h1>
+          <p class="subtitle">Neurologie · Psychiatrie · Psychotherapie</p>
         </div>
       </div>
       <nav class="menu" aria-label="Hauptnavigation">
-        <a href="#leistungen">Leistungen</a>
         <a href="#sprechzeiten">Sprechzeiten</a>
         <a href="#kontakt">Kontakt</a>
-        <a href="#anfahrt">Anfahrt</a>
-        <a href="#praxis">Praxis</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container section">
-      <h1>Neurologie, Psychiatrie und Psychotherapie mit Zeit und Augenmaß</h1>
-      <p>Diagnostik und Therapie nach aktuellem Stand der Wissenschaft – freundlich, klar, patientenzentriert.</p>
-      <div class="kpi" aria-label="Kurzinformationen">
-        <span class="pill">Kassen- & Privatpraxis</span>
-        <span class="pill">Barrierearmer Zugang</span>
-        <span class="pill">Termine nach Vereinbarung</span>
-        <span class="pill">Mitglied im <a href="https://www.hormonnetzwerk.de/" target="_blank" rel="noopener">Hormon Netzwerk</a></span>
+      <h1>Neurologie · Psychiatrie · Psychotherapie</h1>
+      <p>Sprechzeiten nur nach Vereinbarung.</p>
+      <div class="pillrow" aria-label="Kurzinformationen">
+        <span class="pill">Bahnstraße 8, 65207 Wiesbaden-Erbenheim</span>
+        <span class="pill">Terminbutton ab 01.10.2025</span>
       </div>
     </div>
   </section>
 
   <main class="container" id="inhalt">
-    <section id="leistungen" class="section" aria-labelledby="leistungen-title">
-      <h2 id="leistungen-title">Leistungsspektrum</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Diagnostik</h3>
-          <ul class="list">
-            <li>Neurologische Untersuchung</li>
-            <li>EEG / evozierte Potentiale</li>
-            <li>Nervenleitgeschwindigkeit (NLG/EMG)</li>
-            <li>Sonografie hirnversorgender Gefäße</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Behandlung</h3>
-          <ul class="list">
-            <li>Kopfschmerz & Migräne</li>
-            <li>Parkinson & Bewegungsstörungen</li>
-            <li>Multiple Sklerose</li>
-            <li>Polyneuropathien</li>
-            <li>Schwindel & Gleichgewicht</li>
-            <li>Psychiatrische Erkrankungen (Depression, Angststörungen, etc.)</li>
-            <li>Psychotherapeutische Begleitung</li>
-            <li><strong>Hormontherapie – Hinweis:</strong> In Zusammenarbeit mit dem <a href="https://www.hormonnetzwerk.de/" target="_blank" rel="noopener">Hormon Netzwerk</a> nach aktuellen Leitlinien</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <section id="sprechzeiten" class="section" aria-labelledby="sprechzeiten-title">
       <h2 id="sprechzeiten-title">Sprechzeiten</h2>
       <div class="card">
-        <p><strong>Vormittags:</strong> Mo–Fr 08:30–12:30&nbsp;Uhr</p>
-        <p><strong>Nachmittags:</strong> Mo & Mi 14:00–17:00&nbsp;Uhr</p>
-        <p class="subtitle">Weitere Termine nach Vereinbarung. Bitte bringen Sie Überweisung, Medikamentenliste und Vorbefunde mit.</p>
+        <p><strong>Nur nach Vereinbarung</strong></p>
+        <button class="btn" type="button" disabled aria-disabled="true" title="Verfügbar ab 01.10.2025">
+          Termin online buchen (ab 01.10.2025)
+        </button>
       </div>
     </section>
 
     <section id="kontakt" class="section" aria-labelledby="kontakt-title">
       <h2 id="kontakt-title">Kontakt</h2>
-      <div class="grid cols-2">
-        <div class="card" role="region" aria-labelledby="kontaktdaten">
-          <h3 id="kontaktdaten">Praxisdaten</h3>
-          <p><strong>Adresse:</strong> [Straße Hausnr.], [PLZ] [Stadt]</p>
-          <p><strong>Telefon:</strong> <a href="tel:+49XXXXXXXXX">+49 [Vorwahl] [Nummer]</a></p>
-          <p><strong>E‑Mail:</strong> <a href="mailto:info@[domain.de]">info@[domain.de]</a></p>
-          <p><strong>Terminbuchung:</strong> <a href="https://www.doctolib.de/" target="_blank" rel="noopener">Doctolib</a> (optional)</p>
-        </div>
-        <form class="card" aria-labelledby="formular-title" onsubmit="event.preventDefault();alert('Danke! Ihre Nachricht wurde lokal verarbeitet. Bitte E‑Mail‑Link nutzen.');">
-          <h3 id="formular-title">Kurznachricht</h3>
-          <p class="subtitle">Für medizinische Notfälle wählen Sie bitte den Notruf 112.</p>
-          <textarea id="msg" rows="5" style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px" placeholder="Ihre Nachricht… (dieses Demo‑Formular sendet nicht; bitte E‑Mail nutzen)"></textarea>
-          <div style="margin-top:10px;display:flex;gap:10px">
-            <a class="btn" href="mailto:info@[domain.de]?subject=Anfrage%20Praxis">Per E‑Mail senden</a>
-            <button class="btn" type="submit">Absenden (Demo)</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section id="anfahrt" class="section" aria-labelledby="anfahrt-title">
-      <h2 id="anfahrt-title">Anfahrt</h2>
-      <div class="card">
-        <p>ÖPNV: [Linie/Station], Fußweg ca. [x] Minuten. Parkmöglichkeiten: [Kurzinfo]. Barrierearmer Zugang vorhanden.</p>
-      </div>
-    </section>
-
-    <section id="praxis" class="section" aria-labelledby="praxis-title">
-      <h2 id="praxis-title">Über die Praxis</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Team</h3>
-          <p>Dr. med. [Name], Fachärztin für Neurologie, Psychiatrie und Psychotherapie<br/>[MFA‑Namen], Anmeldung / Funktionsdiagnostik</p>
-        </div>
-        <div class="card">
-          <h3>Behandlungsgrundsätze</h3>
-          <p>Transparente Aufklärung, evidenzbasierte Medizin, interdisziplinäre Zusammenarbeit.</p>
+      <div class="card" role="region" aria-labelledby="kontaktdaten">
+        <h3 id="kontaktdaten">Praxisadresse</h3>
+        <p><strong>Adresse:</strong><br/>Bahnstraße 8<br/>65207 Wiesbaden-Erbenheim</p>
+        <div style="margin-top:8px">
+          <button class="btn" type="button" onclick="window.open('https://maps.google.com/?q=' + encodeURIComponent('Bahnstraße 8, 65207 Wiesbaden-Erbenheim'),'_blank','noopener')">
+            Karte ansehen
+          </button>
         </div>
       </div>
     </section>
@@ -163,32 +88,26 @@
       <h2 id="recht-title">Rechtliches</h2>
       <details class="card">
         <summary>Impressum (TMG)</summary>
-        <p><strong>Verantwortlich:</strong> Dr. med. [Name], Fachärztin für Neurologie, Psychiatrie und Psychotherapie</p>
-        <p>[Praxisanschrift], Telefon: +49 [..], E‑Mail: info@[domain.de]</p>
-        <p>Zuständige Ärztekammer: [Kammer, Adresse, URL]</p>
-        <p>Berufsrechtliche Regelungen: <a href="https://www.bundesaerztekammer.de/" target="_blank" rel="noopener">MBO‑Ä</a>, Heilberufsgesetz [Bundesland]</p>
-        <p>USt‑IdNr.: [falls vorhanden]</p>
+        <p><strong>Verantwortlich:</strong> Dr. med. Nannette Deutsch Schaab</p>
+        <p>Praxisanschrift: Bahnstraße 8, 65207 Wiesbaden-Erbenheim</p>
       </details>
       <details class="card" style="margin-top:12px">
         <summary>Datenschutzerklärung (DSGVO)</summary>
-        <p>Es werden keine Cookies, Tracker oder eingebettete Drittinhalte geladen. Server-Logs werden nur zur Gewährleistung des Betriebs gespeichert. Verantwortliche Stelle: Dr. med. [Name], Kontakt wie oben.</p>
+        <p>Es werden keine Cookies, Tracker oder eingebettete Drittinhalte geladen. Server-Logs nur zur Gewährleistung des Betriebs.</p>
       </details>
       <details class="card" style="margin-top:12px">
         <summary>Hinweis gemäß HWG</summary>
-        <p>Aus rechtlichen Gründen werden keine Heilsversprechen abgegeben. Informationen ersetzen nicht die ärztliche Beratung. Dies gilt insbesondere auch für Angaben zur Hormontherapie.</p>
+        <p>Es werden keine Heilsversprechen abgegeben. Informationen ersetzen nicht die ärztliche Beratung.</p>
       </details>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container section">
-      <p>© <span id="year"></span> Praxis für Neurologie, Psychiatrie & Psychotherapie – Dr. med. [Name]</p>
-      <p><a href="#rechtliches">Impressum & Datenschutz</a></p>
+      <p>© <span id="year"></span> Dr. med. Nannette Deutsch Schaab</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
