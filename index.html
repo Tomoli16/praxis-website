@@ -3,58 +3,119 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Praxis Dr. Nannette Deutsch Schaab – Neurologie, Psychiatrie & Psychotherapie</title>
-  <meta name="description" content="Praxis für Neurologie, Psychiatrie & Psychotherapie – Wiesbaden Erbenheim." />
-  <meta property="og:title" content="Praxis Dr. Nannette Deutsch Schaab" />
-  <meta property="og:description" content="Neurologie, Psychiatrie & Psychotherapie in Wiesbaden Erbenheim." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="de_DE" />
+  <title>Dr. med. Nannette Deutsch Schaab – Neurologie · Psychiatrie · Psychotherapie</title>
+  <meta name="description" content="Dr. med. Nannette Deutsch Schaab – Neurologie, Psychiatrie und Psychotherapie. Sprechzeiten nur nach Vereinbarung. Bahnstraße 8, 65207 Wiesbaden-Erbenheim." />
   <link rel="icon" href="favicon.ico" />
   <style>
-    :root{
-      --bg:#ffffff;--fg:#0b1320;--muted:#6b7280;--brand:#1e40af;--card:#f8fafc;--border:#e5e7eb
-    }
+    :root { --bg:#ffffff; --fg:#0b1320; --muted:#6b7280; --brand:#1e40af; --card:#f8fafc; --border:#e5e7eb; }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--fg);background:var(--bg)}
-    .container{max-width:700px;margin:0 auto;padding:24px}
-    header{text-align:center;padding:32px 16px;border-bottom:1px solid var(--border)}
-    header h1{margin:0;font-size:1.6rem}
-    header p{margin:4px 0;color:var(--muted)}
-    section{padding:32px 0;border-bottom:1px solid var(--border)}
-    h2{font-size:1.2rem;margin-bottom:12px}
-    .btn{display:inline-block;margin-top:12px;padding:12px 20px;border-radius:8px;border:1px solid var(--border);background:var(--brand);color:white;font-weight:500;text-decoration:none}
-    .btn.disabled{background:#9ca3af;border-color:#9ca3af;pointer-events:none;}
-    footer{padding:24px;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--border)}
+    html,body{margin:0;height:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--fg);background:var(--bg)}
+    a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:880px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,#93c5fd,#60a5fa);display:grid;place-items:center;color:#0b1320;font-weight:700}
+    .title{line-height:1.1;margin:0}
+    .subtitle{margin:0;color:var(--muted)}
+    .menu a{padding:10px;border-radius:8px}
+    .menu a:hover{background:var(--card)}
+    .section{scroll-margin-top:90px;padding:28px 0}
+    .hero{background:linear-gradient(180deg,#f0f9ff,transparent);border-bottom:1px solid var(--border)}
+    .hero h1{font-size:clamp(1.4rem,2.4vw,2rem);margin:10px 0 6px}
+    .hero p{color:var(--muted);margin:6px 0 14px}
+    .pillrow{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{background:#ecfeff;border:1px solid #cffafe;color:#155e75;border-radius:999px;padding:8px 12px;font-size:.92rem}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:white}
+    .btn[disabled]{opacity:.6;cursor:not-allowed}
+    .footer{border-top:1px solid var(--border);color:var(--muted);font-size:.95rem}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Praxis Dr. Nannette Deutsch Schaab</h1>
-    <p>Fachärztin für Neurologie, Psychiatrie & Psychotherapie</p>
-    <p>Mitglied im <a href="[Hormonnetzwerk-URL]" target="_blank" rel="noopener">Hormon Netzwerk</a> (nach Rimkus®-Kurs)</p>
-    <p>Bahnstraße 8, 65207 Wiesbaden Erbenheim</p>
+  <header aria-label="Seitenkopf und Navigation">
+    <div class="container nav">
+      <div class="brand" role="banner">
+        <div class="logo" aria-hidden="true">ND</div>
+        <div>
+          <h1 class="title">Dr. med. Nannette Deutsch Schaab</h1>
+          <p class="subtitle">Neurologie · Psychiatrie · Psychotherapie</p>
+          <p class="subtitle">Mitglied im <a href="[Hormonnetzwerk-URL]" target="_blank" rel="noopener">Hormon Netzwerk</a> (nach Rimkus®-Kurs)</p>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Hauptnavigation">
+        <a href="#sprechzeiten">Sprechzeiten</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>Sprechzeiten</h2>
-      <p>Nur nach Vereinbarung</p>
-      <a href="#" class="btn disabled">Terminvereinbarung ab 01.10 verfügbar</a>
+  <section class="hero">
+    <div class="container section">
+      <h1>Neurologie · Psychiatrie · Psychotherapie</h1>
+      <p>Sprechzeiten nur nach Vereinbarung.</p>
+      <div class="pillrow" aria-label="Kurzinformationen">
+        <span class="pill">Bahnstraße 8, 65207 Wiesbaden-Erbenheim</span>
+        <span class="pill">Terminbutton ab 01.10.2025</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" id="inhalt">
+    <section id="sprechzeiten" class="section" aria-labelledby="sprechzeiten-title">
+      <h2 id="sprechzeiten-title">Sprechzeiten</h2>
+      <div class="card">
+        <p><strong>Nur nach Vereinbarung</strong></p>
+        <button class="btn" type="button" disabled aria-disabled="true" title="Verfügbar ab 01.10.2025">
+          Termin online buchen (ab 01.10.2025)
+        </button>
+      </div>
     </section>
 
-    <section>
+    <section id="kontakt" class="section" aria-labelledby="kontakt-title">
+      <h2 id="kontakt-title">Kontakt</h2>
+      <div class="card" role="region" aria-labelledby="kontaktdaten">
+        <h3 id="kontaktdaten">Praxisadresse</h3>
+        <p><strong>Adresse:</strong><br/>Bahnstraße 8<br/>65207 Wiesbaden-Erbenheim</p>
+        <div style="margin-top:8px">
+          <button class="btn" type="button" onclick="window.open('https://maps.google.com/?q=' + encodeURIComponent('Bahnstraße 8, 65207 Wiesbaden-Erbenheim'),'_blank','noopener')">
+            Karte ansehen
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
       <h2>Wichtiger Hinweis</h2>
-      <p>Bei medizinischen Notfällen wählen Sie bitte sofort den Notruf <strong>112</strong>.</p>
+      <div class="card">
+        <p>Bei medizinischen Notfällen wählen Sie bitte sofort den Notruf <strong>112</strong>.</p>
+      </div>
+    </section>
+
+    <section id="rechtliches" class="section" aria-labelledby="recht-title">
+      <h2 id="recht-title">Rechtliches</h2>
+      <details class="card">
+        <summary>Impressum (TMG)</summary>
+        <p><strong>Verantwortlich:</strong> Dr. med. Nannette Deutsch Schaab</p>
+        <p>Praxisanschrift: Bahnstraße 8, 65207 Wiesbaden-Erbenheim</p>
+      </details>
+      <details class="card" style="margin-top:12px">
+        <summary>Datenschutzerklärung (DSGVO)</summary>
+        <p>Es werden keine Cookies, Tracker oder eingebettete Drittinhalte geladen. Server-Logs nur zur Gewährleistung des Betriebs.</p>
+      </details>
+      <details class="card" style="margin-top:12px">
+        <summary>Hinweis gemäß HWG</summary>
+        <p>Es werden keine Heilsversprechen abgegeben. Informationen ersetzen nicht die ärztliche Beratung.</p>
+      </details>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Praxis Dr. Nannette Deutsch Schaab</p>
-    <p>Impressum & Datenschutz auf Anfrage</p>
+  <footer class="footer">
+    <div class="container section">
+      <p>© <span id="year"></span> Dr. med. Nannette Deutsch Schaab</p>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
